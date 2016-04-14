@@ -18,7 +18,8 @@ namespace Forms.Controllers
             //        new Task ("SETH", "finish assignment", true)
             //    };
 
-            var currentTasks = Session["tasks"] as List<Task> ?? new List<Task>();
+            //copied code not sure what it does,never went over it
+            //var currentTasks = Session["tasks"] as List<Task> ?? new List<Task>();
 
 
             return View(currentTasks);
