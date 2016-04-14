@@ -17,8 +17,8 @@ namespace Forms.Controllers
             //        new Task ("Brain", "finish assignment", false),
             //        new Task ("SETH", "finish assignment", true)
             //    };
-            List<Task> currentTasks;
-            currentTasks = (List<Task>)Session["tasks"] ?? new List<Task>();
+
+            var currentTasks = Session["tasks"] as List<Task> ?? new List<Task>();
 
 
             return View(currentTasks);
@@ -47,7 +47,7 @@ namespace Forms.Controllers
             }
             else
             {
-                return View();
+                return View(newTask);
             }
 
             

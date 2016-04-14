@@ -10,13 +10,13 @@ namespace Forms.Models
     {
         [Required]
         public string Name { get; set; }
-        public string Discription { get; set; }
+        public string Description { get; set; }
         public bool Completion { get; set; }
 
-        public Task(string name,string discription,bool completion)
+        public Task(string name,string description,bool completion)
         {
             Name = name;
-            Discription = discription;
+            Description = description;
             Completion = completion;
         }
 

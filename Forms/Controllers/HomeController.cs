@@ -10,9 +10,19 @@ namespace Forms.Controllers
     {
         public ActionResult Index()
         {
+            List<Models.Task> tasks = new List<Models.Task>()
+                {
+                    new Models.Task ("Brian", "finish assignment", false),
+                    new Models.Task ("SETH", "finish assignment", true)
+                };
+
             return View();
         }
-         
+
+        private ActionResult View(object task)
+        {
+            throw new NotImplementedException();
+        }
 
         public ActionResult About()
         {
